@@ -35,7 +35,7 @@ cat > $RUN_PATH/init.sh <<EOF
 export HOSTNAME="termux"
 export TERM="xterm"
 export HOME="/root"
-export TMPDIR"/tmp"
+export TMPDIR="/tmp"
 # 导入全局变量
 . /etc/profile
 
