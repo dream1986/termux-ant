@@ -29,7 +29,7 @@ umount)
     umount $TARGET/dev
     ;;
 switch)
-        echo "http://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/\$arch/\$repo" > $TARGET/etc/pacman.d/mirrorlist
+        echo "Server = http://mirrors.tuna.tsinghua.edu.cn/archlinuxarm/\$arch/\$repo" > $TARGET/etc/pacman.d/mirrorlist
     ;;
 *)
     usage
