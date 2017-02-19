@@ -28,6 +28,8 @@ else
     exit 1
 fi
 
+###############################################
+if [ -e $RUN_PATH/init.sh ]; then
 # chroot状态下的初始化脚本
 cat > $RUN_PATH/init.sh <<EOF
 #!/usr/bin/bash
@@ -67,6 +69,8 @@ TUIGUANG
 # 所以我觉得删了更好，元芳你怎么看？
 bash
 EOF
+fi
+##################################################
 
 chmod 755 $RUN_PATH/init.sh
 
