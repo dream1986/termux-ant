@@ -36,8 +36,13 @@ export HOSTNAME="termux"
 export TERM="xterm"
 export HOME="/root"
 export TMPDIR="/tmp"
+export PS1='[\u@termux \W]
+'
 # 导入全局变量
 . /etc/profile
+
+# 进入HOME目录
+cd \$HOME
 
 cat <<TUIGUANG
   _____                      
