@@ -29,7 +29,7 @@ else
 fi
 
 ###############################################
-if [ -e $RUN_PATH/init.sh ]; then
+if [ ! -e $RUN_PATH/init.sh ]; then
 # chroot状态下的初始化脚本
 cat > $RUN_PATH/init.sh <<EOF
 #!/usr/bin/bash
